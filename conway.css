@@ -1,0 +1,15 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: #ccc;
+  width: 200px;
+  height: 200px;
+}

@@ -4,6 +4,7 @@ import {shallow} from 'enzyme'
 
 import App from '../components/app'
 import Grid from '../components/grid'
+import Cell from '../components/cell'
 
 test('Scaffold', t => {
   t.pass()
@@ -18,5 +19,11 @@ test('<App /> exists', t => {
 test('<Grid /> exists', t => {
   const expected = ''
   const actual = shallow(<Grid />).text()
+  t.is(actual, expected)
+})
+
+test('<Cell /> exists', t => {
+  const expected = true
+  const actual = shallow(<Cell />).hasClass('cell')
   t.is(actual, expected)
 })
